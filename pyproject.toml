@@ -6,10 +6,10 @@ build-backend = "setuptools.build_meta"
 name = "sandbox-pinocchio-parallel-robots"
 version = "0.0.1"
 dependencies = [
-    "pin",
+  "pin"
 ]
 
 [tool.setuptools]
 packages = [
-    "sandbox_pinocchio_parallel_robots",
+  "sandbox_pinocchio_parallel_robots"
 ]
