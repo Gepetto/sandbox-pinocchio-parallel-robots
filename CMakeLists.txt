@@ -6,7 +6,7 @@ set(PROJECT_NAME sandbox-pinocchio-parallel-robots)
 set(PROJECT_DESCRIPTION
     "Set of tools for general purpose operations on pinocchio models. This was originally designed to work with parallel robots."
 )
-set(PROJECT_URL https://gitlab.laas.fr/ldematteis/example-parallel-robots)
+set(PROJECT_URL "https://github.com/${PROJECT_ORG}/${PROJECT_NAME}")
 
 # Project options * Since the project is Python only for now, we remove the
 # option of building the python interface option(BUILD_PYTHON_INTERFACE "Build
