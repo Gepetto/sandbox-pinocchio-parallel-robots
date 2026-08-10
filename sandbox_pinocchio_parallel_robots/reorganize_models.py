@@ -22,16 +22,16 @@ def reorganizeModelDepthFirst(model):
         else:
             (jointId, parentId) = stack.pop()
             jId = new_model.addJoint(
-                parentId,  #
-                model.joints[jointId],  #
-                model.jointPlacements[jointId],  #
+                parentId,
+                model.joints[jointId],
+                model.jointPlacements[jointId],
                 model.names[jointId],
-            )  #
+            )
             new_model.appendBodyToJoint(
                 jId,
                 model.inertias[jointId],
-                pin.SE3.Identity(),  #
-            )  #
+                pin.SE3.Identity(),
+            )
             children = model.children[jointId]
             for c in children:
                 stack.append((c, jId))
