@@ -43,7 +43,7 @@ def reorganizeModelDepthFirst(model):
     return new_model
 
 
-def reorganizeModels(old_model, old_geometry_models=[], old_constraint_models=[]):
+def reorganizeModels(old_model, old_geometry_models=None, old_constraint_models=None):
     """
     Reorganizes the models by creating a new model, updating frames, geometry models, and constraint models.
 
@@ -55,6 +55,10 @@ def reorganizeModels(old_model, old_geometry_models=[], old_constraint_models=[]
     Returns:
         tuple: A tuple containing the reorganized model, geometry models, and constraint models.
     """
+    if old_geometry_models is None:
+        old_geometry_models = []
+    if old_constraint_models is None:
+        old_constraint_models = []
     # Model
     model = reorganizeModelDepthFirst(old_model)
     # Frames
